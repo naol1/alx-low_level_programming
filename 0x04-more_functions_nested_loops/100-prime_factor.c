@@ -1,18 +1,24 @@
 #include <stdio.h>
 
 /**
- * main - Entry point
- * Return: Always 0
+ * main -  checks for checks for a digit (0 through 9).
+ *
+ * Return: Always 0.
  */
 int main(void)
 {
-	unsigned long int i = 3, n = 612852475143;
+	long x, y;
 
-	for (; i < 12057; i += 2)
+	x = 612852475143;
+
+	for (y = 2; x > y; y++)
 	{
-		while (n % i == 0 && n != i)
-			n /= i;
+		while (x % y == 0)
+		{
+			x = x / y;
+		}
 	}
-	printf("%lu\n", n);
+	printf("%lu", y);
+	putchar('\n');
 	return (0);
 }

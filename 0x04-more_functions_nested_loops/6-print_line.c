@@ -1,19 +1,20 @@
 #include "holberton.h"
 
 /**
- * print_line - a function that draws a straight line in the terminal.
- * followed by a new line.
- * @n: An input integer
- * Return: Always 0
+ * print_line -  checks for checks for a digit (0 through 9).
+ * @n: n -  Variable
+ * Return: Always 0.
  */
 void print_line(int n)
 {
-	int i = 0;
+	int x;
 
 	if (n > 0)
 	{
-		for (; i < n; i++)
-			_putchar('_');
+		for (x = 1; x <= n; x++)
+		{
+			_putchar(95);
+		}
 	}
 	_putchar('\n');
 }
