@@ -1,3 +1,2 @@
-#!/usr/bin/gcc main.c -o main; ./main
-
+ #!/bin/bash
 int main(){ return 0; }
