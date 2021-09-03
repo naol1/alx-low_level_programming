@@ -1,0 +1,3 @@
+#!/usr/bin/gcc main.c -o main; ./main
+
+int main(){ return 0; }
